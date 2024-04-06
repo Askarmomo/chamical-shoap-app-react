@@ -2,8 +2,11 @@ import Cart from "./Carts";
 
 const CartContainer = () => {
     return (
-        <div className=" bg-gradient-to-r from-cyan-500 to-blue-500 h-60 w-full p-10">
-            <Cart />
+        <div className=" bg-gradient-to-r from-cyan-500 to-blue-500 h-60 w-full p-10 grid grid-cols-4 gap-4">
+            <Cart small={"TRAFIC"} count={133} svg={ <svg className="bg-rose-500 text-white rounded-full p-1" xmlns="http://www.w3.org/2000/svg" width="3em" height="3em" viewBox="0 0 24 24"><path fill="currentColor" d="M2 21v-2h20v2zm1-3v-7h3v7zm5 0V6h3v12zm5 0V9h3v9zm5 0V3h3v15z"></path></svg> } persantage={4.5} date={"simce last day"} />
+            <Cart small={"NEW USERS"} count={132} svg={<svg className="bg-indigo-500 text-white rounded-full p-1" xmlns="http://www.w3.org/2000/svg" width="3em" height="3em" viewBox="0 0 24 24"><path fill="currentColor" d="M5.85 17.1q1.275-.975 2.85-1.537T12 15q1.725 0 3.3.563t2.85 1.537q.875-1.025 1.363-2.325T20 12q0-3.325-2.337-5.663T12 4Q8.675 4 6.337 6.338T4 12q0 1.475.488 2.775T5.85 17.1M12 13q-1.475 0-2.488-1.012T8.5 9.5q0-1.475 1.013-2.488T12 6q1.475 0 2.488 1.013T15.5 9.5q0 1.475-1.012 2.488T12 13m0 9q-2.075 0-3.9-.788t-3.175-2.137q-1.35-1.35-2.137-3.175T2 12q0-2.075.788-3.9t2.137-3.175q1.35-1.35 3.175-2.137T12 2q2.075 0 3.9.788t3.175 2.137q1.35 1.35 2.138 3.175T22 12q0 2.075-.788 3.9t-2.137 3.175q-1.35 1.35-3.175 2.138T12 22"></path></svg> } persantage={6.8} date={"since last week"} />
+            <Cart small={"SALES"} count={105} svg={ <svg className="bg-yellow-500 text-white rounded-full p-1" xmlns="http://www.w3.org/2000/svg" width="3em" height="3em" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5"><path d="M14 9.846c-1-.923-3.667-1.23-3.667.616S14 11.385 14 13.23s-3 1.846-4 .615m2 .857V16m0-6.887V8M2 8l9.732-4.866a.6.6 0 0 1 .536 0L22 8"></path><path d="M20 11v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-8"></path></g></svg>} persantage={9.4} date={"since last month"} />
+            <Cart small={"PORFOMANCE"} count={118} svg={ <svg className="bg-cyan-500 text-white rounded-full p-1" xmlns="http://www.w3.org/2000/svg" width="3em" height="3em" viewBox="0 0 24 24"><path fill="currentColor" d="M17.5 19q-.633 0-1.066-.434Q16 18.133 16 17.5v-1.808q0-.632.434-1.066q.433-.434 1.066-.434t1.066.434q.434.434.434 1.066V17.5q0 .633-.434 1.066Q18.133 19 17.5 19M12 19q-.633 0-1.066-.434q-.434-.433-.434-1.066v-11q0-.633.434-1.066Q11.367 5 12 5t1.066.434q.434.433.434 1.066v11q0 .633-.434 1.066Q12.633 19 12 19m-5.5 0q-.633 0-1.066-.434Q5 18.133 5 17.5v-6.192q0-.633.434-1.067q.433-.433 1.066-.433t1.066.433Q8 10.675 8 11.308V17.5q0 .633-.434 1.066Q7.133 19 6.5 19"></path></svg>} persantage={8.8} date={" since last year"} />
         </div>
     );
 }
