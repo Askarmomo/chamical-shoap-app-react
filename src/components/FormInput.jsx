@@ -18,6 +18,7 @@ FormInput.propTypes = {
     register: propTypes.object,
     type: propTypes.string,
     placeholder: propTypes.string,
-    label: propTypes.string
+    label: propTypes.string,
+    error: propTypes.string
 
 }
