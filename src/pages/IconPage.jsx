@@ -1,7 +1,11 @@
+import Table from "../components/Table";
+
 const IconPage = () => {
-    return ( 
-        <h1>hi iam icon page</h1>
-     );
-}
- 
+  return (
+    <div className=" w-full">
+      <Table />
+    </div>
+  );
+};
+
 export default IconPage;

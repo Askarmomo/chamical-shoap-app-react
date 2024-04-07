@@ -3,7 +3,11 @@ import './index.css'
 import App from "./App"
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import DashboardPage from "./pages/DashboardPage"
-import IconPage from"./pages/IconPage"
+import IconPage from "./pages/IconPage"
+import UserProfilePage from './pages/UserProfilePage'
+import LoginPage from './pages/LoginPage'
+import RigisterPage from './pages/RigisterPage'
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -15,7 +19,19 @@ const router = createBrowserRouter([
       },
       {
         path: "icons",
-        element:<IconPage/>
+        element: <IconPage />
+      },
+      {
+        path: "userprofile",
+        element: <UserProfilePage />,
+      },
+      {
+        path: "login",
+        element: <LoginPage />
+      },
+      {
+        path: "rigister",
+        element: <RigisterPage />
       }
     ]
   }
