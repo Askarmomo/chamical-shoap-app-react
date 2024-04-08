@@ -12,7 +12,7 @@ const FormInput = ({ register, type, placeholder, label, error }) => {
           required
           type={type}
           placeholder={placeholder}
-          className="p-1 rounded text-black outline-none bg-zinc-200 w-full"
+          className="p-2 rounded text-black outline-none bg-zinc-200 w-full"
         />
         {error && <small className="text-red-500">{error.message}</small>}
       </div>

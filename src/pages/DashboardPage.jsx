@@ -15,7 +15,7 @@ const formSchema = z.object({
   quandity: z.string().min(1),
   dapricete: z.string().min(3).max(15)
 });
- const DashboardPage = () => {
+const DashboardPage = () => {
   const [data, SetData] = useState([])
   const {
     register,
@@ -28,10 +28,10 @@ const formSchema = z.object({
   };
   data
   return (
-    <div className="w-full">
+    <div className="w-full bg-cyan-900 min-h-screen">
       <CartContainer />
       <div>
-        <div className=" text-2xl font-semibold font-mono pt-5 pl-10 ">Save Data</div>
+        <div className=" text-2xl font-semibold font-mono pt-5 pl-10  text-white">Save Data</div>
         <form
           onSubmit={handleSubmit(fromSubmit)}
           className="bg-white w-[90%] p-5 space-y-4 text-white text-opacity-70 border-b dark:bg-gray-800 dark:border-gray-700 rounded mt-5 mr-10 ml-10 mb-10"

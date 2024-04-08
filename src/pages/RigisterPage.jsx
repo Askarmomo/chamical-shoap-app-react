@@ -1,6 +1,8 @@
 const RigisterPage = () => {
     return (
-        <h1>rigister Page</h1>
+        <div className=" w-full g-cyan-900 min-h-screen">
+
+        </div>
       );
 }
  
