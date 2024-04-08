@@ -28,7 +28,7 @@ const DashboardPage = () => {
   };
   data
   return (
-    <div className="w-full bg-cyan-900 min-h-screen">
+    <div className="w-full bg-cyan-800 min-h-screen">
       <CartContainer />
       <div>
         <div className=" text-2xl font-semibold font-mono pt-5 pl-10  text-white">Save Data</div>

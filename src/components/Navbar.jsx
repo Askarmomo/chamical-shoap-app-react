@@ -5,7 +5,7 @@ const Navbar = () => {
         <div className="text-white cursor-pointer font-semibold text-4xl font-mono flex gap-2 items-center">
           <div>momo</div>
           <svg
-            className="animate-pulse bg-gradient-to-r from-cyan-500 to-rose-500 rounded"
+            className="animate-pulse bg-gradient-to-r from-rose-500 to-cyan-500 rounded"
             xmlns="http://www.w3.org/2000/svg"
             width="1em"
             height="1em"

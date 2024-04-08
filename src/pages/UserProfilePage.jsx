@@ -10,7 +10,7 @@ const UserProfilePage = () => {
     }
 
     return (
-        <div className=" w-full bg-cyan-900 min-h-screen">
+        <div className=" w-full bg-cyan-800 min-h-screen">
             <div className=" m-5">
                 <div className=" text-xl font-semibold text-white  p-5"> USERS</div>
                 <div className="  w-full " >
