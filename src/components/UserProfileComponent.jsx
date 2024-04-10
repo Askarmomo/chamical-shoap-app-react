@@ -2,7 +2,7 @@ import PropTypes from "prop-types"
 
 const UserProfileComponent = ({ name, number, svg, address, count, onClick, rule }) => {
     return (
-        <div to={"Userchild"} onClick={onClick} className=" flex justify-between bg-slate-800 transition duration-300 hover:bg-slate-900 ease-in-out text-white px-4 py-2 rounded-t items-center cursor-pointer w-full" >
+        <div to={"Userchild"} onClick={onClick} className=" flex justify-between bg-slate-800 transition duration-300 hover:bg-slate-900 ease-in-out text-white px-4 py-2 rounded items-center cursor-pointer w-full" >
             <div className=" flex space-x-8 items-center">
                 <div className=" font-semibold">{count}</div>
                 <div><img className=" w-14 rounded-full" src={svg} alt={name} /></div>
@@ -25,5 +25,6 @@ UserProfileComponent.propTypes = {
     svg: PropTypes.string,
     address: PropTypes.string,
     onClick: PropTypes.func,
-    rule: PropTypes.string
+    rule: PropTypes.string,
+    count:PropTypes.string
 }

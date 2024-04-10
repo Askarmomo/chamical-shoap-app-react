@@ -10,6 +10,7 @@ function App() {
         <Navbar />
         <div className="flex">
           <Sidebar />
+          
           <Outlet />
         </div>
       </div>

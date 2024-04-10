@@ -7,6 +7,7 @@ import IconPage from "./pages/IconPage"
 import UserProfilePage from './pages/UserProfilePage'
 import LoginPage from './pages/LoginPage'
 import RigisterPage from './pages/RigisterPage'
+import ProfilePage from './pages/ProfilePage'
 
 const router = createBrowserRouter([
   {
@@ -26,6 +27,10 @@ const router = createBrowserRouter([
         element: <UserProfilePage />,
       },
       {
+        path: "userprofile/profile",
+        element: <ProfilePage />
+      },
+      {
         path: "login",
         element: <LoginPage />
       },
@@ -33,6 +38,7 @@ const router = createBrowserRouter([
         path: "rigister",
         element: <RigisterPage />
       }
+
     ]
   }
 ])

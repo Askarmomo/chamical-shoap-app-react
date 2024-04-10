@@ -1,5 +1,6 @@
 import { useState } from "react";
 import UserProfileComponent from "../components/UserProfileComponent";
+import { Link } from "react-router-dom";
 
 
 const UserProfilePage = () => {
@@ -14,7 +15,9 @@ const UserProfilePage = () => {
             <div className=" m-5">
                 <div className=" text-xl font-semibold text-white  p-5"> USERS</div>
                 <div className="  w-full " >
-                    <UserProfileComponent onClick={FormShow} count={"1"} name={"Mohammed Asakr"} rule={hiddenF ? " rotate-90  " : ""} number={"0751336007"} svg={'https://github.com/Askarmomo.png'} address={"Naduoothu kinniya-05"} />
+                    <Link to={"profile"}>
+                        <UserProfileComponent onClick={FormShow} count={"1"} name={"Mohammed Asakr"} rule={hiddenF ? " rotate-90  " : ""} number={"0751336007"} svg={'https://github.com/Askarmomo.png'} address={"Naduoothu kinniya-05"} />
+                    </Link>
                     <div className={` ${hiddenF ? " block max-w-full " : " hidden"}`}>
                         <table className=" text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400 w-full">
                             <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">

@@ -40,13 +40,13 @@ const Navbar = () => {
           <div className=" flex items-center justify-center space-x-2">
             <div>
               <img
-                className="w-8 rounded-full"
+                className="w-8 h-8 rounded-full object-cover border border-lime-300 cursor-pointer"
                 src="./src/images/WhatsApp Image 2024-01-28 at 18.41.53_c0709b7b.jpg"
                 alt=""
               />
             </div>
             <div>
-              <h1 className="text-white font-semibold">Asakr</h1>
+              <h1 className="text-white font-semibold cursor-pointer">Asakr</h1>
             </div>
           </div>
         </div>

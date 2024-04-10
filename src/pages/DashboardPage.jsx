@@ -4,7 +4,7 @@ import FormInput from "../components/FormInput";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
 import { useState } from "react";
-
+import JsonData from "../data/data.json"
 
 const formSchema = z.object({
   name: z.string().min(3).max(50),
@@ -16,7 +16,7 @@ const formSchema = z.object({
   dapricete: z.string().min(3).max(15)
 });
 const DashboardPage = () => {
-  const [data, SetData] = useState([])
+  const [data, SetData] = useState({})
   const {
     register,
     handleSubmit,
@@ -26,7 +26,8 @@ const DashboardPage = () => {
     SetData(data)
 
   };
-  data
+  JsonData.push(data)
+  console.log(JsonData);
   return (
     <div className="w-full bg-cyan-800 min-h-screen">
       <CartContainer />
