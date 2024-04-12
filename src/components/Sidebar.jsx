@@ -11,7 +11,7 @@ const Sidebar = () => {
                 </Link>
                 <Link to={"icons"} className="flex hover:bg-opacity-30 space-x-4 items-center hover:bg-indigo-200 rounded-r transition ease-in-out duration-300 hover:scale-105 px-5 py-2 cursor-pointer">
                     <svg className=" text-indigo-500" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"><path d="M10 20.777a8.942 8.942 0 0 1-2.48-.969M14 3.223a9.003 9.003 0 0 1 0 17.554m-9.421-3.684a8.961 8.961 0 0 1-1.227-2.592M3.124 10.5c.16-.95.468-1.85.9-2.675l.169-.305m2.714-2.941A8.954 8.954 0 0 1 10 3.223"></path><path d="M12 8v4l3 3"></path></g></svg>
-                    <h1 className=" opacity-50 font-semibold font-sans">History</h1>
+                    <h1 className=" opacity-50 font-semibold font-sans">D. history</h1>
                 </Link>
                 <Link to={"userprofile"} className="flex hover:bg-opacity-30 space-x-4 items-center hover:bg-lime-200 rounded-r transition ease-in-out duration-300 hover:scale-105 px-5 py-2 cursor-pointer">
                     <svg className=" text-lime-500" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M9.775 12q-.9 0-1.5-.675T7.8 9.75l.325-2.45q.2-1.425 1.3-2.363T12 4q1.475 0 2.575.938t1.3 2.362l.325 2.45q.125.9-.475 1.575t-1.5.675zM4 18v-.8q0-.85.438-1.562T5.6 14.55q1.55-.775 3.15-1.162T12 13q1.65 0 3.25.388t3.15 1.162q.725.375 1.163 1.088T20 17.2v.8q0 .825-.587 1.413T18 20H6q-.825 0-1.412-.587T4 18"></path></svg>

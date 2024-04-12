@@ -42,8 +42,8 @@ const ProfilePage = () => {
                             <th className=" p-3"> Date</th>
                             <th className=" p-3"> Name</th>
                             <th className=" p-3"> Product</th>
-                            <th className=" p-3"> Quandity</th>
                             <th className=" p-3"> Price</th>
+                            <th className=" p-3"> Quandity</th>
                             <th className=" p-3">Totall Price</th>
                             <th className=" p-3">Cradit Amount</th>
                         </tr>
@@ -53,8 +53,8 @@ const ProfilePage = () => {
                             <td className=" p-3">2023/04/05</td>
                             <td className=" p-3">Mohemmed Askar</td>
                             <td className=" p-3">Loyent-400ML-01</td>
-                            <td className=" p-3">2</td>
                             <td className=" p-3">Rs. 14500</td>
+                            <td className=" p-3">2</td>
                             <td className=" p-3">Rs. 25000</td>
                             <td className=" p-3">Rs. 10000</td>
                         </tr>
