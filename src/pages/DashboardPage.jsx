@@ -4,7 +4,6 @@ import FormInput from "../components/FormInput";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
 import { useEffect, useState } from "react";
-// import JsonData from "../data/data.json"
 import { collection, getDocs, addDoc } from "firebase/firestore";
 import { db } from "../FireBase";
 
@@ -29,7 +28,10 @@ const DashboardPage = () => {
   } = useForm({ resolver: zodResolver(formSchema) });
 
   const [custemers, setCustemers] = useState([])
+
   // firebase code here
+
+  // 1.sent data to fireBase
   const fromSubmit = async (data) => {
     try {
       const docRef = await addDoc(collection(db, "custemer"), data);
@@ -42,15 +44,12 @@ const DashboardPage = () => {
   };
   console.log(custemers);
 
+  //2.get data from fireBase
   useEffect(() => {
     const getdatafromfirebase = async () => {
-      // await fetch()
+
       const querySnapshot = await getDocs(collection(db, "custemer"));
       setCustemers(querySnapshot.docs.map((doc) => doc.data()))
-      // console.log(querySnapshot.docs[0].data());
-      // querySnapshot.forEach((doc) => {
-      //   console.log(`${doc.id} => ${doc.data()}`,doc.data());
-      // });
 
       if (querySnapshot.docs.length === 0) {
         console.log('no records in exist');
@@ -205,6 +204,7 @@ const DashboardPage = () => {
       </div>
     </div>
   );
+  
 };
 
 export default DashboardPage;
