@@ -6,6 +6,7 @@ import { z } from "zod";
 import { useEffect, useState } from "react";
 import { collection, getDocs, addDoc } from "firebase/firestore";
 import { db } from "../FireBase";
+import { CustemerContext } from "../context/CustemerContext";
 
 const formSchema = z.object({
   name: z.string().min(3).max(50),
@@ -18,6 +19,7 @@ const formSchema = z.object({
   craditAmount: z.string().min(3).max(15)
 });
 
+
 const DashboardPage = () => {
 
   const {
@@ -28,6 +30,7 @@ const DashboardPage = () => {
   } = useForm({ resolver: zodResolver(formSchema) });
 
   const [custemers, setCustemers] = useState([])
+
 
   // firebase code here
 
@@ -63,6 +66,7 @@ const DashboardPage = () => {
     <div className="w-full bg-cyan-800 min-h-screen">
       <CartContainer />
       <div>
+      <CustemerContext.Provider value={custemers}/>
         <div className=" text-2xl font-semibold font-mono pt-5 pl-10  text-white">Save Data</div>
         <form
           onSubmit={handleSubmit(fromSubmit)}
@@ -204,7 +208,7 @@ const DashboardPage = () => {
       </div>
     </div>
   );
-  
+
 };
 
 export default DashboardPage;
